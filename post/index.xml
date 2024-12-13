@@ -1,5 +1,142 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on EterIll Blogs</title><link>http://EternalIllusion.github.io/post/</link><description>Recent content in Posts on EterIll Blogs</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 12 Dec 2024 20:14:50 +0800</lastBuildDate><atom:link href="http://EternalIllusion.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Test1</title><link>http://EternalIllusion.github.io/post/test1/</link><pubDate>Thu, 12 Dec 2024 20:14:50 +0800</pubDate><guid>http://EternalIllusion.github.io/post/test1/</guid><description>&lt;p>sbsbsbsbbsbdbdndjidugeurusjdjjrowidhdbjsjdifjhrhdjijdh&lt;/p>
-&lt;h1 id="jdkdjwowknrjofjrnesoskkwoofjtjnofjfndijsjdjrjurohbfjdowoqkjejd">
-&lt;a class="header-anchor" href="#jdkdjwowknrjofjrnesoskkwoofjtjnofjfndijsjdjrjurohbfjdowoqkjejd">&lt;/a>
-jdkdjwowknrjofjrnesoskkwoofjtjnofjfndijsjdjrjurohbfjdowoqkjejd
-&lt;/h1></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on EterIll Blogs</title><link>http://EternalIllusion.github.io/post/</link><description>Recent content in Posts on EterIll Blogs</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 13 Dec 2024 07:59:59 +0800</lastBuildDate><atom:link href="http://EternalIllusion.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Alist美化、日夜主题一键切换</title><link>http://EternalIllusion.github.io/post/alisttheme/</link><pubDate>Fri, 13 Dec 2024 07:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/alisttheme/</guid><description>&lt;p>说明：本文适用于&lt;strong>Alist&amp;gt;=3.31&lt;/strong>。&lt;/p>
+&lt;p>Info: This article is for &lt;strong>Alist&amp;gt;=3.31&lt;/strong> .&lt;/p>
+&lt;h1 id="日夜主题美化">
+&lt;a class="header-anchor" href="#%e6%97%a5%e5%a4%9c%e4%b8%bb%e9%a2%98%e7%be%8e%e5%8c%96">&lt;/a>
+日夜主题美化
+&lt;/h1>&lt;p>打开&lt;code>alist-header.html,&lt;/code>编辑以下内容，将四个引号内的&lt;code>.png&lt;/code>换成你的图片连接。&lt;/p>
+&lt;p>Open &lt;code>alist-header.html &lt;/code>and edit it, make sure &lt;code>.png&lt;/code> links in thr quote replaced with your own link to the image.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>.hope-ui-light {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-image:url(&amp;#34;白天图片横屏|Daythemehorizontal.png&amp;#34;) !important;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> @media (max-aspect-ratio:1) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-image:url(&amp;#34;白天图片竖屏|Daythemevertical.png&amp;#34;) !important;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-repeat:no-repeat;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-size:cover;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-attachment:fixed;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-position-x:center
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.hope-ui-dark {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-image:url(&amp;#34;黑夜图片横屏|Nightthemehorizontal.png&amp;#34;) !important;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> @media (max-aspect-ratio:1) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-image:url(&amp;#34;黑夜图片竖屏|Nightthemevertical.png&amp;#34;) !important;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-repeat:no-repeat;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-size:cover;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-attachment:fixed;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-position-x:center
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后打开Alist，登录管理员账号并进入管理页面。依次点击：&lt;code>三 &amp;gt; 设置 &amp;gt; 全局&lt;/code> 将修改后内容全选，复制粘贴到 &lt;strong>自定义头部&lt;/strong> 中。&lt;/p></description></item><item><title>FlipperCN 项目发布页</title><link>http://EternalIllusion.github.io/post/flippercn/</link><pubDate>Fri, 13 Dec 2024 07:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/flippercn/</guid><description>&lt;h1 id="flippercn-项目发布页">
+&lt;a class="header-anchor" href="#flippercn-%e9%a1%b9%e7%9b%ae%e5%8f%91%e5%b8%83%e9%a1%b5">&lt;/a>
+FlipperCN 项目发布页
+&lt;/h1>&lt;h2 id="flippercn-team-release-page">
+&lt;a class="header-anchor" href="#flippercn-team-release-page">&lt;/a>
+FlipperCN Team Release Page
+&lt;/h2>&lt;p>&lt;a href="https://flippercn.com/">https://flippercn.com/&lt;/a>
+欢迎您访问FlipperCN！ &lt;em>网站来自宅人改造家&lt;/em>&lt;/p>
+&lt;p>&lt;a href="https://github.com/EternalIllusion/FlipperCN/releases/tag/1.0">发布页传送门&lt;/a>&lt;/p>
+&lt;h2 id="鸣谢">
+&lt;a class="header-anchor" href="#%e9%b8%a3%e8%b0%a2">&lt;/a>
+鸣谢
+&lt;/h2>&lt;p>&lt;strong>Marvin&lt;/strong> &lt;strong>宅人改造家&lt;/strong>&lt;/p>
+&lt;p>有余 Daifresne_TSGP 果仁 keprice&lt;/p>
+&lt;blockquote>
+&lt;p>本项目&lt;strong>拒绝&lt;/strong>对名字同时包含**“极客”、“之”、“眼”**的组织开放，请你们自觉退出。&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;h1 id="qa">
+&lt;a class="header-anchor" href="#qa">&lt;/a>
+Q&amp;amp;A
+&lt;/h1>&lt;h2 id="为什么不公开全部的pcb文件">
+&lt;a class="header-anchor" href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e4%b8%8d%e5%85%ac%e5%bc%80%e5%85%a8%e9%83%a8%e7%9a%84pcb%e6%96%87%e4%bb%b6">&lt;/a>
+为什么不公开全部的pcb文件？
+&lt;/h2>&lt;p>在这个项目立项之后，我收到了许多负面消息和人身攻击😱，包括但不限于发表言论说此项目是纯□□，辱骂我群管理员、我的朋友、开盒我😱以及我群管理、威胁我及我群管理、DDOS我朋友的服务器等令我反感的行为，这让我不禁怀疑起做这个项目的意义。我一开始的目的只是为了好玩和希望体验到和广大网友一起为了某个共同目标努力的美好过程，但是现在这个项目即将演变成某些人以本项目充当正品搞诈骗，去国外网站上圈钱的工具😰😱，我不希望看到这样的结局。所以经过我的再三考虑，我打算&lt;strong>仅公开原理图和layout这些官方已公开文件的立创eda版本&lt;/strong>，把布线和二次修改的乐趣留给大家😋。🤗希望大家都能在这个项目中体会到开源电子DIY的乐趣😎&lt;/p>
+&lt;h2 id="有考虑过什么时候放出全部内容吗">
+&lt;a class="header-anchor" href="#%e6%9c%89%e8%80%83%e8%99%91%e8%bf%87%e4%bb%80%e4%b9%88%e6%97%b6%e5%80%99%e6%94%be%e5%87%ba%e5%85%a8%e9%83%a8%e5%86%85%e5%ae%b9%e5%90%97">&lt;/a>
+有考虑过什么时候放出全部内容吗？
+&lt;/h2>&lt;p>有的🤓，但不是现在。我正在考虑在我18岁生日当天作为生日贺礼将这个项目全部公开，并在FlupperCN的public仓库对外网公开。😎但是我现在正在备战高考，无暇顾及这个项目，高考完再说吧😥&lt;/p>
+&lt;h3 id="注以上文字中emoji仅供娱乐不传达任何含义">
+&lt;a class="header-anchor" href="#%e6%b3%a8%e4%bb%a5%e4%b8%8a%e6%96%87%e5%ad%97%e4%b8%ademoji%e4%bb%85%e4%be%9b%e5%a8%b1%e4%b9%90%e4%b8%8d%e4%bc%a0%e8%be%be%e4%bb%bb%e4%bd%95%e5%90%ab%e4%b9%89">&lt;/a>
+注：以上文字中emoji&lt;strong>仅供娱乐&lt;/strong>，不传达任何含义
+&lt;/h3>&lt;h1 id="flippercn许可协议">
+&lt;a class="header-anchor" href="#flippercn%e8%ae%b8%e5%8f%af%e5%8d%8f%e8%ae%ae">&lt;/a>
+FlipperCN许可协议
+&lt;/h1>&lt;p>FlipperCN许可协议（以下简称“本协议”）由FlipperCN团队成（以下简称“我们”）与您签订。我们将通过本协议帮助您了解本项目许可使用及相关方面的权利义务。请您务必审慎阅读并充分理解本协议各项条款内容，并选择同意或不同意（如您是未成年人，则应在法定监护人陪同下审查阅读）。如果您不同意本协议的全部条款，请退出。请认真阅读以下本协议的内容：&lt;/p>
+&lt;h2 id="关于flippercn">
+&lt;a class="header-anchor" href="#%e5%85%b3%e4%ba%8eflippercn">&lt;/a>
+关于FlipperCN
+&lt;/h2>&lt;p>FlipperCN（以下简称“本项目”）是我们基于Flipper devices Inc.发布的半开源硬件项目Flipper Zero（以下简称”FZ“）的面向国内的公益性开源项目。用于FZ开发和（但不限于）进行硬件项目分析调试、项目测试和Bug分析。本项目某些场景下可能具有修改和调试网络或无线电数据包的功能，如果要修改和调试第三方的数据包，必须取得所属方的官方授权；如果在未授权的情况下擅自修改和调试，所造成的任何问题和责任（包括资金损失、法律风险等）均与我们无关。&lt;/p>
+&lt;h2 id="功能风险">
+&lt;a class="header-anchor" href="#%e5%8a%9f%e8%83%bd%e9%a3%8e%e9%99%a9">&lt;/a>
+功能风险
+&lt;/h2>&lt;ul>
+&lt;li>
+&lt;p>（1）本项目运行过程中产生的数据缓存，可能会包含您的敏感信息（可能包括密码、Cookie等），请务必及时进行清理，以防泄露；我们不会以任何方式收集用户的敏感信息，因为不当使用本项目导致的信息泄露本项目不承担任何相关责任；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>（2）由于政策和法律原因，本项目完整产品不在地球上任何平台进行发布上架和任何形式的销售活动。您通过本项目的售卖及其他活动与本项目完全无关，后果自负。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>（3）如果您所在的地区法律禁止本项目及相关类型的软件程序，您应当遵守当地法律，立即卸载删除相关内容。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="禁止行为">
+&lt;a class="header-anchor" href="#%e7%a6%81%e6%ad%a2%e8%a1%8c%e4%b8%ba">&lt;/a>
+禁止行为
+&lt;/h2>&lt;p>无论在任何情况下，您都不得作出本项目禁止的行为：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>（1）禁止使用本项目对任何数据或者计算机系统进行恶意攻击、制作外挂、盗取数据等非法行为；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>（2）禁止在未取得其它第三方的官方授权的情况下，对其数据进行调试和修改；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>（3）禁止对本项目本身进行二次封装后用于盈利活动，本项目内容都不得用于盈利用途；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>（4）禁止在未经过授权情况下向任何渠道发布非官方网站贩卖本项目的任何版本。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>（5）转载发布或者发布基于本项目的任何内容都应注明相关内容出处。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="免责事由">
+&lt;a class="header-anchor" href="#%e5%85%8d%e8%b4%a3%e4%ba%8b%e7%94%b1">&lt;/a>
+免责事由
+&lt;/h2>&lt;p>您知悉并同意，我们不因下述任一情况而可能导致的任何损害赔偿承担责任，包括但不限于财产、收益、数据资料等方面的损失或其它形式的无形损失：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>（1）您违反本协议或者相关的服务条款规定，我们有权视您的行为性质采取包括但不限于中断使用许可、停止提供服务、法律追究等措施。同时，我们会视司法部门的要求，协助调查；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>（2）您违反本协议或者相关的服务条款规定，导致任何第三方损害的，您应当独立承担责任；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>（3）因台风、地震、海啸、洪水、停电、战争、恐怖袭击等不可抗力之因素导致本项目不能正常读取；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>（4）由于黑客攻击、电信部门技术调整或故障、系统维护等因素导致相关权益受损；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>（5）由于政府命令、法律法规的变更、司法机关及行政机关的命令、裁定等原因而导致的项目删除、封存等。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="其它条款">
+&lt;a class="header-anchor" href="#%e5%85%b6%e5%ae%83%e6%9d%a1%e6%ac%be">&lt;/a>
+其它条款
+&lt;/h2>&lt;p>您知悉并同意以下条款：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>（1）电子文本形式的授权协议如同双方签署的协议一样，具有完整和等同的法律效力。您使用本项目或本服务及视为您已阅读并同意受本协议的约束，协议许可范围以外的行为，将直接违反本协议并构成侵权，我们有权立即终止服务，责令损止停害，并保留追究相关责任的权利；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>（2）我们有权在必要时修改本协议条款。您可以在本项目的最新版本中查阅相关条款协议。本协议条款变更后，如果您继续使用本项目，即视为您已同意修改后的协议。如果您不同意修改后的协议，应当立即停止使用本项目；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>（3）本协议条款无论因何种原因部分无效或不可执行，其余条款仍有效，对双方具有约束力；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>（4）本协议所有的条款标题仅为阅读方便，本身并无实际含义，不能作为本协议涵义解释的依据；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>（5）我们保留对于本协议的最终解释权。&lt;/p></description></item></channel></rss>
