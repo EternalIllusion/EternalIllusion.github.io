@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on EterIll Blogs</title><link>http://EternalIllusion.github.io/post/</link><description>Recent content in Posts on EterIll Blogs</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 13 Dec 2024 11:59:59 +0800</lastBuildDate><atom:link href="http://EternalIllusion.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>个人介绍|Personal Info</title><link>http://EternalIllusion.github.io/post/readaboutme/</link><pubDate>Fri, 13 Dec 2024 11:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/readaboutme/</guid><description>&lt;h1 id="eternalillusion--eterill">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on EterIll Blogs</title><link>http://EternalIllusion.github.io/post/</link><description>Recent content in Posts on EterIll Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 13 Dec 2024 11:59:59 +0800</lastBuildDate><atom:link href="http://EternalIllusion.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>个人介绍|Personal Info</title><link>http://EternalIllusion.github.io/post/readaboutme/</link><pubDate>Fri, 13 Dec 2024 11:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/readaboutme/</guid><description>&lt;h1 id="eternalillusion--eterill">
 &lt;a class="header-anchor" href="#eternalillusion--eterill">&lt;/a>
 EternalIllusion | EterIll
 &lt;/h1>&lt;h2 id="恒寂幻灭--艾特里尔">
@@ -49,27 +49,28 @@ EternalIllusion | EterIll
 日夜主题美化
 &lt;/h1>&lt;p>打开&lt;code>alist-header.html,&lt;/code>编辑以下内容，将四个引号内的&lt;code>.png&lt;/code>换成你的图片连接。&lt;/p>
 &lt;p>Open &lt;code>alist-header.html &lt;/code>and edit it, make sure &lt;code>.png&lt;/code> links in thr quote replaced with your own link to the image.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>.hope-ui-light {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-image:url(&amp;#34;白天图片横屏|Daythemehorizontal.png&amp;#34;) !important;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> @media (max-aspect-ratio:1) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-image:url(&amp;#34;白天图片竖屏|Daythemevertical.png&amp;#34;) !important;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-repeat:no-repeat;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-size:cover;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-attachment:fixed;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-position-x:center
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.hope-ui-dark {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-image:url(&amp;#34;黑夜图片横屏|Nightthemehorizontal.png&amp;#34;) !important;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> @media (max-aspect-ratio:1) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-image:url(&amp;#34;黑夜图片竖屏|Nightthemevertical.png&amp;#34;) !important;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-repeat:no-repeat;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-size:cover;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-attachment:fixed;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> background-position-x:center
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后打开Alist，登录管理员账号并进入管理页面。依次点击：&lt;code>三 &amp;gt; 设置 &amp;gt; 全局&lt;/code> 将修改后内容全选，复制粘贴到 &lt;strong>自定义头部&lt;/strong> 中。&lt;/p></description></item><item><title>FlipperCN 项目发布页</title><link>http://EternalIllusion.github.io/post/flippercn/</link><pubDate>Fri, 13 Dec 2024 07:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/flippercn/</guid><description>&lt;h1 id="flippercn-项目发布页">
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-css" data-lang="css">&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span>&lt;span class="nc">hope-ui-light&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">background-image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nb">url&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;白天图片横屏|Daythemehorizontal.png&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="cp">!important&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="err">@media&lt;/span> &lt;span class="err">(&lt;/span>&lt;span class="n">max-aspect-ratio&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="err">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">background-image&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="nb">url&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;白天图片竖屏|Daythemevertical.png&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="cp">!important&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">background-repeat&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nd">no-repeat&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">background-size&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nd">cover&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">background-attachment&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nd">fixed&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">background-position-x&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nd">center&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span>&lt;span class="nc">hope-ui-dark&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">background-image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nb">url&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;黑夜图片横屏|Nightthemehorizontal.png&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="cp">!important&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="err">@media&lt;/span> &lt;span class="err">(&lt;/span>&lt;span class="n">max-aspect-ratio&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="err">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">background-image&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="nb">url&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;黑夜图片竖屏|Nightthemevertical.png&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="cp">!important&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">background-repeat&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nd">no-repeat&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">background-size&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nd">cover&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">background-attachment&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nd">fixed&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">background-position-x&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nd">center&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后打开Alist，登录管理员账号并进入管理页面。依次点击：&lt;code>三 &amp;gt; 设置 &amp;gt; 全局&lt;/code> 将修改后内容全选，复制粘贴到 &lt;strong>自定义头部&lt;/strong> 中。&lt;/p>
+&lt;p>Then open Alist, enter manage page and click by the following order: &lt;code>三 &amp;gt; Settings &amp;gt; Global&lt;/code> .Now select thr whole modified file content and copy and paste it into &lt;strong>Customize head&lt;/strong> .&lt;/p></description></item><item><title>FlipperCN 项目发布页</title><link>http://EternalIllusion.github.io/post/flippercn/</link><pubDate>Fri, 13 Dec 2024 07:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/flippercn/</guid><description>&lt;h1 id="flippercn-项目发布页">
 &lt;a class="header-anchor" href="#flippercn-%e9%a1%b9%e7%9b%ae%e5%8f%91%e5%b8%83%e9%a1%b5">&lt;/a>
 FlipperCN 项目发布页
 &lt;/h1>&lt;h2 id="flippercn-team-release-page">
