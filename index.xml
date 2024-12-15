@@ -184,4 +184,121 @@ FlipperCN许可协议
 &lt;p>（4）本协议所有的条款标题仅为阅读方便，本身并无实际含义，不能作为本协议涵义解释的依据；&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>（5）我们保留对于本协议的最终解释权。&lt;/p></description></item></channel></rss>
+&lt;p>（5）我们保留对于本协议的最终解释权。&lt;/p></description></item><item><title>友情链接</title><link>http://EternalIllusion.github.io/friend/</link><pubDate>Mon, 01 Jan 2024 11:45:14 +0800</pubDate><guid>http://EternalIllusion.github.io/friend/</guid><description>&lt;div class="friend-wrap" data-aos="zoom-in">
+ 
+ &lt;div class="friend-item-wrap">
+ &lt;a href="https://d-sketon.github.io/" rel="noopener external nofollow noreferrer" target="_blank">&lt;/a>
+ &lt;div class="friend-icon-wrap">
+ &lt;div class="friend-icon">
+ &lt;img
+ data-src="https://d-sketon.github.io/avatar/avatar.webp"
+ data-sizes="auto"
+ alt="D-Sketon"
+ class="lazyload"
+ />
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="friend-info-wrap">
+ &lt;div class="friend-name">
+ D-Sketon
+ &lt;/div>
+ &lt;div class="friend-desc">
+ Hexo 建站
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="friend-item-wrap">
+ &lt;a href="https://d-sketon.github.io/astro-theme-reimu/" rel="noopener external nofollow noreferrer" target="_blank">&lt;/a>
+ &lt;div class="friend-icon-wrap">
+ &lt;div class="friend-icon">
+ &lt;img
+ data-src="https://d-sketon.github.io/avatar/avatar.webp"
+ data-sizes="auto"
+ alt="D-Sketon"
+ class="lazyload"
+ />
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="friend-info-wrap">
+ &lt;div class="friend-name">
+ D-Sketon
+ &lt;/div>
+ &lt;div class="friend-desc">
+ Astro 建站
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ 
+&lt;/div>
+
+&lt;h2 id="本站信息">
+&lt;a class="header-anchor" href="#%e6%9c%ac%e7%ab%99%e4%bf%a1%e6%81%af">&lt;/a>
+本站信息
+&lt;/h2>&lt;ul>
+&lt;li>站名： EterIll Blogs&lt;/li>
+&lt;li>站长： EterIll&lt;/li>
+&lt;/ul>
+&lt;h2 id="申请方法">
+&lt;a class="header-anchor" href="#%e7%94%b3%e8%af%b7%e6%96%b9%e6%b3%95">&lt;/a>
+申请方法
+&lt;/h2>&lt;ul>
+&lt;li>添加本站后，在本页留言，格式如下&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yml" data-lang="yml">&lt;span class="line">&lt;span class="cl">- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#您的名字&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">url&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#您的网址&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">desc&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#简短描述&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#一张图片&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="小伙伴们">
+&lt;a class="header-anchor" href="#%e5%b0%8f%e4%bc%99%e4%bc%b4%e4%bb%ac">&lt;/a>
+小伙伴们
+&lt;/h2>
+
+
+&lt;div class="friend-wrap" data-aos="zoom-in">
+ 
+ &lt;div class="friend-item-wrap">
+ &lt;a href="https://d-sketon.github.io/" rel="noopener external nofollow noreferrer" target="_blank">&lt;/a>
+ &lt;div class="friend-icon-wrap">
+ &lt;div class="friend-icon">
+ &lt;img
+ data-src="https://d-sketon.github.io/avatar/avatar.webp"
+ data-sizes="auto"
+ alt="D-Sketon"
+ class="lazyload"
+ />
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="friend-info-wrap">
+ &lt;div class="friend-name">
+ D-Sketon
+ &lt;/div>
+ &lt;div class="friend-desc">
+ Hexo 建站
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="friend-item-wrap">
+ &lt;a href="https://d-sketon.github.io/astro-theme-reimu/" rel="noopener external nofollow noreferrer" target="_blank">&lt;/a>
+ &lt;div class="friend-icon-wrap">
+ &lt;div class="friend-icon">
+ &lt;img
+ data-src="https://d-sketon.github.io/avatar/avatar.webp"
+ data-sizes="auto"
+ alt="D-Sketon"
+ class="lazyload"
+ />
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="friend-info-wrap">
+ &lt;div class="friend-name">
+ D-Sketon
+ &lt;/div>
+ &lt;div class="friend-desc">
+ Astro 建站
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ 
+&lt;/div></description></item><item><title>关于</title><link>http://EternalIllusion.github.io/about/</link><pubDate>Thu, 09 Jun 2022 20:12:52 +0800</pubDate><guid>http://EternalIllusion.github.io/about/</guid><description/></item></channel></rss>
