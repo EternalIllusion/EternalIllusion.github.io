@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on EterIll Blogs</title><link>http://EternalIllusion.github.io/post/</link><description>Recent content in Posts on EterIll Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 13 Dec 2024 11:59:59 +0800</lastBuildDate><atom:link href="http://EternalIllusion.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>个人介绍|Personal Info</title><link>http://EternalIllusion.github.io/post/readaboutme/</link><pubDate>Fri, 13 Dec 2024 11:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/readaboutme/</guid><description>&lt;h1 id="eternalillusion--eterill">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on EterIll Blogs</title><link>http://EternalIllusion.github.io/post/</link><description>Recent content in Posts on EterIll Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Dec 2024 09:59:59 +0800</lastBuildDate><atom:link href="http://EternalIllusion.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows LTSC 安装微软商店</title><link>http://EternalIllusion.github.io/post/winltscstore/</link><pubDate>Mon, 16 Dec 2024 09:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/winltscstore/</guid><description>&lt;p>说明：本文适用于&lt;strong>Windows LTSC&lt;/strong>。&lt;/p>
+&lt;h1 id="前言">
+&lt;a class="header-anchor" href="#%e5%89%8d%e8%a8%80">&lt;/a>
+前言
+&lt;/h1>&lt;p>经常搞机的朋友们都知道，Windows LTSC版是没有微软商店和其他应用的，但是假如我们想要在ltsc版玩Minecraft或者其他微软游戏的话就要登录微软商店，怎么办呢？ ~~ 当然是安装一个啦! ~~&lt;/p>
+&lt;h1 id="教程正文">
+&lt;a class="header-anchor" href="#%e6%95%99%e7%a8%8b%e6%ad%a3%e6%96%87">&lt;/a>
+教程正文
+&lt;/h1>&lt;h2 id="方法一开源小工具">
+&lt;a class="header-anchor" href="#%e6%96%b9%e6%b3%95%e4%b8%80%e5%bc%80%e6%ba%90%e5%b0%8f%e5%b7%a5%e5%85%b7">&lt;/a>
+方法一：开源小工具
+&lt;/h2>&lt;blockquote>
+&lt;p>🚀🚀推荐 （可能需要魔法上网）&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;a href="https://github.com/kkkgo/LTSC-Add-MicrosoftStore">kkkgo/LTSC-Add-MicrosoftStore&lt;/a>&lt;/p>
+&lt;p>点击上方链接🔗，按照网页说明操作。&lt;/p>
+&lt;h2 id="方法二xbox大法">
+&lt;a class="header-anchor" href="#%e6%96%b9%e6%b3%95%e4%ba%8cxbox%e5%a4%a7%e6%b3%95">&lt;/a>
+方法二：Xbox大法
+&lt;/h2>&lt;blockquote>
+&lt;p>🚀🚀推荐，流程极度舒适&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>1.下载并安装 Xbox App for Windows，下载地址： &lt;a href="https://www.xbox.com/en-US/apps/xbox-app-for-pc">官网&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>你知道吗，Minecraft安装包会自动安装Xbox，如果你要安装微软商店是为了玩Minecraft的话，那就直接安装Minecraft，等到进度条过半时取消即可。&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;p>2.找到设置（左上角），进入&lt;code>设置-通用&lt;/code>或者&lt;code>设置-安装项&lt;/code> 找到&lt;code>微软商店&lt;/code>点击&lt;code>安装&lt;/code>或者&lt;code>install&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>3.等待完成&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="方法三powershell">
+&lt;a class="header-anchor" href="#%e6%96%b9%e6%b3%95%e4%b8%89powershell">&lt;/a>
+方法三：PowerShell
+&lt;/h2>&lt;blockquote>
+&lt;p>体验较差，非必要不建议&lt;/p>
+&lt;/blockquote>
+&lt;p>以管理员权限启动输入以下命令：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="line">&lt;span class="cl">&lt;span class="n">wsreset&lt;/span> &lt;span class="n">-i&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后等待即可。&lt;/p>
+&lt;h1 id="结语">
+&lt;a class="header-anchor" href="#%e7%bb%93%e8%af%ad">&lt;/a>
+结语
+&lt;/h1>&lt;p>好了，现在你的电脑上应该就有微软商店了AwA。&lt;/p>
+&lt;p>&lt;del>Minecraft，启动！&lt;/del>&lt;/p></description></item><item><title>个人介绍|Personal Info</title><link>http://EternalIllusion.github.io/post/readaboutme/</link><pubDate>Fri, 13 Dec 2024 11:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/readaboutme/</guid><description>&lt;h1 id="eternalillusion--eterill">
 &lt;a class="header-anchor" href="#eternalillusion--eterill">&lt;/a>
 EternalIllusion | EterIll
 &lt;/h1>&lt;h2 id="恒寂幻灭--艾特里尔">
