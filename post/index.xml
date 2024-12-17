@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on EterIll Blogs</title><link>http://EternalIllusion.github.io/post/</link><description>Recent content in Posts on EterIll Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Dec 2024 09:59:59 +0800</lastBuildDate><atom:link href="http://EternalIllusion.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows LTSC 安装微软商店</title><link>http://EternalIllusion.github.io/post/winltscstore/</link><pubDate>Mon, 16 Dec 2024 09:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/winltscstore/</guid><description>&lt;p>说明：本文适用于&lt;strong>Windows LTSC&lt;/strong>。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on EterIll Blogs</title><link>http://EternalIllusion.github.io/post/</link><description>Recent content in Posts on EterIll Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 17 Dec 2024 09:59:59 +0800</lastBuildDate><atom:link href="http://EternalIllusion.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Python资源合集（持续更新）</title><link>http://EternalIllusion.github.io/post/pythonimages/</link><pubDate>Tue, 17 Dec 2024 09:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/pythonimages/</guid><description>&lt;h1 id="安装包镜像">
+&lt;a class="header-anchor" href="#%e5%ae%89%e8%a3%85%e5%8c%85%e9%95%9c%e5%83%8f">&lt;/a>
+安装包镜像
+&lt;/h1>&lt;p>&lt;a href="https://mirrors.aliyun.com/python-release/">阿里云&lt;/a>|&lt;a href="https://mirrors.huaweicloud.com/python/">华为云&lt;/a>&lt;/p>
+&lt;h1 id="pip镜像">
+&lt;a class="header-anchor" href="#pip%e9%95%9c%e5%83%8f">&lt;/a>
+pip镜像
+&lt;/h1>&lt;p>&lt;a href="https://mirrors.aliyun.com/pypi/simple/">阿里云源&lt;/a>|&lt;a href="https://mirrors.ustc.edu.cn/pypi/simple/">中科大源&lt;/a>|&lt;a href="https://pypi.tuna.tsinghua.edu.cn/simple">清华源&lt;/a>|&lt;a href="https://pypi.douban.com/simple">豆瓣源&lt;/a>&lt;/p>
+&lt;h2 id="pip源使用">
+&lt;a class="header-anchor" href="#pip%e6%ba%90%e4%bd%bf%e7%94%a8">&lt;/a>
+pip源使用
+&lt;/h2>&lt;p>临时使用：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">pip install 包名 -i 源URL
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>永久切换：&lt;/p>
+&lt;p>在用户目录\pip下建立或修改&lt;code>pip.ini&lt;/code>
+（如果使用Linux系统用户目录改为/home/用户名）&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-ini" data-lang="ini">&lt;span class="line">&lt;span class="cl">&lt;span class="k">[global]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">index-url&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">源URL&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">[install]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">trusted-host&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">同上，保持一致&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Windows LTSC 安装微软商店</title><link>http://EternalIllusion.github.io/post/winltscstore/</link><pubDate>Mon, 16 Dec 2024 09:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/winltscstore/</guid><description>&lt;p>说明：本文适用于&lt;strong>Windows LTSC&lt;/strong>。&lt;/p>
 &lt;h1 id="前言">
 &lt;a class="header-anchor" href="#%e5%89%8d%e8%a8%80">&lt;/a>
 前言
