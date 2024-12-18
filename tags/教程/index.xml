@@ -1,23 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>教程 on EterIll Blogs</title><link>http://EternalIllusion.github.io/tags/%E6%95%99%E7%A8%8B/</link><description>Recent content in 教程 on EterIll Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 17 Dec 2024 09:59:59 +0800</lastBuildDate><atom:link href="http://EternalIllusion.github.io/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux系统从入门到入土1-基础操作</title><link>http://EternalIllusion.github.io/post/linuxnoob01/</link><pubDate>Tue, 17 Dec 2024 09:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/linuxnoob01/</guid><description>&lt;blockquote>
 &lt;p>This page is under writing.&lt;/p>
 &lt;/blockquote>
-&lt;h2 id="文本编辑器nano">
+&lt;h1 id="文件处理">
+&lt;a class="header-anchor" href="#%e6%96%87%e4%bb%b6%e5%a4%84%e7%90%86">&lt;/a>
+文件处理
+&lt;/h1>&lt;h2 id="文本编辑器nano">
 &lt;a class="header-anchor" href="#%e6%96%87%e6%9c%ac%e7%bc%96%e8%be%91%e5%99%a8nano">&lt;/a>
 文本编辑器|Nano
 &lt;/h2>&lt;p>Nano是一款开源文本编辑器，一般来说会包含在你的系统里。要启动nano，你可以输入：&lt;code>nano [文件名]&lt;/code>来启动nano。如果你要使用nano修改系统文件，请使用sudo。&lt;/p>
-&lt;p>Nano界面如下：&lt;/p>
+&lt;h3 id="界面">
+&lt;a class="header-anchor" href="#%e7%95%8c%e9%9d%a2">&lt;/a>
+界面
+&lt;/h3>&lt;p>Nano界面如下：&lt;/p>
 &lt;blockquote>
-&lt;p>&lt;code>GNU nano 7.2 文件名 &lt;/code>
-正文内容
-&lt;code>^G&lt;/code> Help &lt;code>^O&lt;/code> Write Out &lt;code>^W&lt;/code> Where Is &lt;code>^K&lt;/code> Cut &lt;code>^T&lt;/code> Execute &lt;code>^C&lt;/code> Location
-&lt;code>^X&lt;/code> Exit &lt;code>^R&lt;/code> Read File &lt;code>^\&lt;/code> Replace &lt;code>^U&lt;/code> Paste &lt;code>^J&lt;/code> Justify &lt;code>^/&lt;/code> Go To Line&lt;/p>
+&lt;p>&lt;code>GNU nano 7.2&amp;amp;emsp;&amp;amp;emsp; 文件名&amp;amp;emsp;&amp;amp;emsp;&amp;amp;emsp;&amp;amp;emsp; &lt;/code>&lt;/p>
+&lt;p>正文内容&lt;/p>
+&lt;p>&lt;code>^G&lt;/code> Help  &lt;code>^O&lt;/code> Write Out &lt;code>^W&lt;/code> Where Is &lt;code>^K&lt;/code> Cut  &lt;code>^T&lt;/code> Execute &lt;code>^C&lt;/code> Location&lt;/p>
+&lt;p>&lt;code>^X&lt;/code> Exit  &lt;code>^R&lt;/code> Read File &lt;code>^\&lt;/code> Replace &lt;code>^U&lt;/code> Paste  &lt;code>^J&lt;/code> Justify &lt;code>^/&lt;/code> Go To Line&lt;/p>
 &lt;/blockquote>
+&lt;h3 id="操作">
+&lt;a class="header-anchor" href="#%e6%93%8d%e4%bd%9c">&lt;/a>
+操作
+&lt;/h3>&lt;p>Nano的操作在界面下方全部展示，&lt;code>^&lt;/code>代表&lt;code>Ctrl&lt;/code>。如需退出，按下&lt;code>Ctrl+X&lt;/code>，输入y/n选择是否保存，确定文件名即可退出。&lt;/p>
 &lt;h2 id="文本编辑器vim">
 &lt;a class="header-anchor" href="#%e6%96%87%e6%9c%ac%e7%bc%96%e8%be%91%e5%99%a8vim">&lt;/a>
 文本编辑器|Vim
-&lt;/h2>&lt;p>Vim界面如下：&lt;/p>
+&lt;/h2>&lt;p>Vim也是一款开源文本编辑器，一般来说会包含在你的系统里。要启动Vim，你可以输入：&lt;code>vim &amp;lt;文件名&amp;gt;&lt;/code>来启动vim。如果你要使用Vim修改系统文件，请使用sudo。&lt;/p>
+&lt;h3 id="界面-1">
+&lt;a class="header-anchor" href="#%e7%95%8c%e9%9d%a2-1">&lt;/a>
+界面
+&lt;/h3>&lt;p>Vim界面如下：&lt;/p>
 &lt;blockquote>
-&lt;p>~
-~
-&lt;code> 0,0-1 All&lt;/code>&lt;/p>
-&lt;/blockquote></description></item></channel></rss>
+&lt;p>~&lt;/p>
+&lt;p>~&lt;/p>
+&lt;p>&lt;code>&amp;amp;emsp;&amp;amp;emsp;&amp;amp;emsp;&amp;amp;emsp;&amp;amp;emsp;&amp;amp;emsp; 0,0-1&amp;amp;emsp;&amp;amp;emsp; All&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="基本操作">
+&lt;a class="header-anchor" href="#%e5%9f%ba%e6%9c%ac%e6%93%8d%e4%bd%9c">&lt;/a>
+基本操作
+&lt;/h3>&lt;p>vim使用方向键来操作光标，按&lt;code>i&lt;/code>进入编辑模式，按&lt;code>ESC&lt;/code>退出编辑模式。按下&lt;code>:&lt;/code>进入命令行，输入&lt;code>w&lt;/code>保存，输入&lt;code>q&lt;/code>退出，输入&lt;code>qa!&lt;/code>强制退出，输入&lt;code>help&lt;/code>打开帮助。例：输入&lt;code>:wq&lt;/code>保存并退出。&lt;/p></description></item></channel></rss>
