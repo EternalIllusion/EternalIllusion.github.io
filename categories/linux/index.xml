@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on EterIll Blogs</title><link>http://EternalIllusion.github.io/categories/linux/</link><description>Recent content in Linux on EterIll Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 17 Dec 2024 09:59:59 +0800</lastBuildDate><atom:link href="http://EternalIllusion.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux系统从入门到入土1-基础操作</title><link>http://EternalIllusion.github.io/post/linuxnoob01/</link><pubDate>Tue, 17 Dec 2024 09:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/linuxnoob01/</guid><description>&lt;blockquote>
+&lt;p>This page is under writing.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="文本编辑器nano">
+&lt;a class="header-anchor" href="#%e6%96%87%e6%9c%ac%e7%bc%96%e8%be%91%e5%99%a8nano">&lt;/a>
+文本编辑器|Nano
+&lt;/h2>&lt;p>Nano是一款开源文本编辑器，一般来说会包含在你的系统里。要启动nano，你可以输入：&lt;code>nano [文件名]&lt;/code>来启动nano。如果你要使用nano修改系统文件，请使用sudo。&lt;/p>
+&lt;p>Nano界面如下：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;code>GNU nano 7.2 文件名 &lt;/code>
+正文内容
+&lt;code>^G&lt;/code> Help &lt;code>^O&lt;/code> Write Out &lt;code>^W&lt;/code> Where Is &lt;code>^K&lt;/code> Cut &lt;code>^T&lt;/code> Execute &lt;code>^C&lt;/code> Location
+&lt;code>^X&lt;/code> Exit &lt;code>^R&lt;/code> Read File &lt;code>^\&lt;/code> Replace &lt;code>^U&lt;/code> Paste &lt;code>^J&lt;/code> Justify &lt;code>^/&lt;/code> Go To Line&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="文本编辑器vim">
+&lt;a class="header-anchor" href="#%e6%96%87%e6%9c%ac%e7%bc%96%e8%be%91%e5%99%a8vim">&lt;/a>
+文本编辑器|Vim
+&lt;/h2>&lt;p>Vim界面如下：&lt;/p>
+&lt;blockquote>
+&lt;p>~
+~
+&lt;code> 0,0-1 All&lt;/code>&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
