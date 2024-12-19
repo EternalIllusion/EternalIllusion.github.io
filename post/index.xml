@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on EterIll Blogs</title><link>http://EternalIllusion.github.io/post/</link><description>Recent content in Posts on EterIll Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 17 Dec 2024 09:59:59 +0800</lastBuildDate><atom:link href="http://EternalIllusion.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux系统从入门到入土1-基础操作</title><link>http://EternalIllusion.github.io/post/linuxnoob01/</link><pubDate>Tue, 17 Dec 2024 09:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/linuxnoob01/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on EterIll Blogs</title><link>http://EternalIllusion.github.io/post/</link><description>Recent content in Posts on EterIll Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 19 Dec 2024 10:59:59 +0800</lastBuildDate><atom:link href="http://EternalIllusion.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux系统从入门到入土1-基础操作</title><link>http://EternalIllusion.github.io/post/linuxnoob01/</link><pubDate>Tue, 17 Dec 2024 09:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/linuxnoob01/</guid><description>&lt;blockquote>
 &lt;p>This page is under writing.&lt;/p>
 &lt;/blockquote>
 &lt;h1 id="文件处理">
@@ -186,15 +186,15 @@ FlipperCN 项目发布页
 &lt;a class="header-anchor" href="#flippercn-team-release-page">&lt;/a>
 FlipperCN Team Release Page
 &lt;/h2>&lt;p>&lt;a href="https://flippercn.com/">https://flippercn.com/&lt;/a>
-欢迎您访问FlipperCN！ &lt;em>网站来自宅人改造家&lt;/em>&lt;/p>
-&lt;p>&lt;a href="https://github.com/EternalIllusion/FlipperCN/releases/tag/1.0">发布页传送门&lt;/a>&lt;/p>
+欢迎您访问FlipperCN！ &lt;em>（网站来自宅人改造家）&lt;/em>&lt;/p>
+&lt;p>&lt;a href="https://github.com/EternalIllusion/FlipperCN/releases/tag/1.0">发布页传送门(GitHub Release)&lt;/a>&lt;/p>
 &lt;h2 id="鸣谢">
 &lt;a class="header-anchor" href="#%e9%b8%a3%e8%b0%a2">&lt;/a>
 鸣谢
-&lt;/h2>&lt;p>&lt;strong>Marvin&lt;/strong> &lt;strong>宅人改造家&lt;/strong>&lt;/p>
+&lt;/h2>&lt;p>&lt;strong>Marvin&lt;/strong> &lt;strong>宅人改造家&lt;/strong> &lt;strong>九幽君&lt;/strong>&lt;/p>
 &lt;p>有余 Daifresne_TSGP 果仁 keprice&lt;/p>
 &lt;blockquote>
-&lt;p>本项目&lt;strong>拒绝&lt;/strong>对名字同时包含**“极客”、“之”、“眼”**的组织开放，请你们自觉退出。&lt;/p>
+&lt;p>本项目&lt;strong>拒绝&lt;/strong>对名字同时包含 &lt;strong>“极客”、“之”、“眼”&lt;/strong> 的组织开放，请你们自觉退出。&lt;/p>
 &lt;/blockquote>
 &lt;hr>
 &lt;h1 id="qa">
@@ -281,16 +281,4 @@ FlipperCN许可协议
 &lt;/h2>&lt;p>您知悉并同意以下条款：&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>（1）电子文本形式的授权协议如同双方签署的协议一样，具有完整和等同的法律效力。您使用本项目或本服务及视为您已阅读并同意受本协议的约束，协议许可范围以外的行为，将直接违反本协议并构成侵权，我们有权立即终止服务，责令损止停害，并保留追究相关责任的权利；&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>（2）我们有权在必要时修改本协议条款。您可以在本项目的最新版本中查阅相关条款协议。本协议条款变更后，如果您继续使用本项目，即视为您已同意修改后的协议。如果您不同意修改后的协议，应当立即停止使用本项目；&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>（3）本协议条款无论因何种原因部分无效或不可执行，其余条款仍有效，对双方具有约束力；&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>（4）本协议所有的条款标题仅为阅读方便，本身并无实际含义，不能作为本协议涵义解释的依据；&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>（5）我们保留对于本协议的最终解释权。&lt;/p></description></item></channel></rss>
+&lt;p>（1）电子文本形式的授权协议如同双方签署的协议一样，具有完整和等同的法律效力。您使用本项目或本服务及视为您已阅读并同意受本协议的约束，协议许可范围以外的行为，将直接违反本协议并构成侵权，我们有权立即终止服务，责令损止停害，并保留追究相关责任的权利；&lt;/p></description></item></channel></rss>
