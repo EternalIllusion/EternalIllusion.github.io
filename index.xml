@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>EterIll Blogs</title><link>http://EternalIllusion.github.io/</link><description>Recent content on EterIll Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 19 Dec 2024 10:59:59 +0800</lastBuildDate><atom:link href="http://EternalIllusion.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux系统从入门到入土1-基础操作</title><link>http://EternalIllusion.github.io/post/linuxnoob01/</link><pubDate>Tue, 17 Dec 2024 09:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/linuxnoob01/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>EterIll Blogs</title><link>http://EternalIllusion.github.io/</link><description>Recent content on EterIll Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Wed, 01 Jan 2025 00:00:01 +0800</lastBuildDate><atom:link href="http://EternalIllusion.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>一款基于Python Flask的html机房管理系统</title><link>http://EternalIllusion.github.io/hidden/document/</link><pubDate>Wed, 01 Jan 2025 00:00:01 +0800</pubDate><guid>http://EternalIllusion.github.io/hidden/document/</guid><description>&lt;p>#一款基于Python Flask的html机房管理系统
+作者：余承谦
+指导教师：&lt;/p>
+&lt;h1 id="摘要">
+&lt;a class="header-anchor" href="#%e6%91%98%e8%a6%81">&lt;/a>
+摘要
+&lt;/h1>&lt;p>本文意在展示一种基于Python Flask的HTML技术实现的机房管理系统，含有简单的随堂小测功能，可选择的简易online judge功能以及简单的版本管理器。&lt;/p>
+&lt;h1 id="正文">
+&lt;a class="header-anchor" href="#%e6%ad%a3%e6%96%87">&lt;/a>
+正文
+&lt;/h1>&lt;h2 id="一引入">
+&lt;a class="header-anchor" href="#%e4%b8%80%e5%bc%95%e5%85%a5">&lt;/a>
+一、引入
+&lt;/h2>&lt;p>在上课的过程中，我发现老师在进行随堂小测来检测同学们的掌握程度时，采用的是基于 Excel 宏合并的方式来统计学生的答案。这个方法虽然可以实现基本的功能，但是却经常出现报错，导致数据的统计不准确，而且效率较低。在当堂练习中，Excel 的处理速度甚至会拖慢整个教学过程，影响了老师及时了解学生学习情况。因此，老师需要花费大量时间修复错误并重新计算数据。这种低效且容易出错的方式无法满足课堂上快速评估学生掌握程度的需求。&lt;/p>
+&lt;p>在与老师进行讨论后，我认为应该开发一个能够自动化、快速且稳定地统计答案的系统，以解决现有的种种问题。经过多次沟通，我决定创建一个专门针对机房管理与随堂测验的系统，以便在课堂中能更高效地进行学生测验、成绩管理、数据分析等工作。这个想法逐渐成型，最终确定了一个名为“机房管理系统”的项目（以下简称“本项目”）。本系统的目标是通过自动化的功能，减轻老师的负担，提升工作效率，让教学过程更加流畅。&lt;/p>
+&lt;p>在经过了详细的需求分析和可行性研究后，我开始规划系统的架构、功能模块以及技术选型，希望能够为老师们提供一个高效、简便、无忧的工具。&lt;/p>
+&lt;h2 id="二系统设计">
+&lt;a class="header-anchor" href="#%e4%ba%8c%e7%b3%bb%e7%bb%9f%e8%ae%be%e8%ae%a1">&lt;/a>
+二、系统设计
+&lt;/h2>&lt;h3 id="21-系统结构设计">
+&lt;a class="header-anchor" href="#21-%e7%b3%bb%e7%bb%9f%e7%bb%93%e6%9e%84%e8%ae%be%e8%ae%a1">&lt;/a>
+2.1 系统结构设计
+&lt;/h3>&lt;p>本系统的设计考虑了多方面的因素，包括机房网络环境、硬件配置、用户操作便利性等。&lt;/p>
+&lt;p>&lt;img src="./p2.1.1.png" alt="图2.1.1 机房简易网络拓扑" title="图2.1.1 机房简易网络拓扑">&lt;/p>
+&lt;p>从图中可以看出，在不增加额外服务器的情况下，将教师机作为本系统的服务器，是一个较为可行的方案。考虑到机房使用的是静态 IP，这使得在局域网内部署一个小型的动态网站变得十分合适。此外，静态 IP 还可以使得机房内部的设备能够通过内网进行稳定的连接，避免了外部访问带来的不稳定因素。&lt;/p>
+&lt;p>由于机房内网络环境较为封闭，使用私有 DNS 能够提供更加稳定的域名解析服务。通过私有 DNS，可以更方便地实现内部域名的管理，而无需依赖外部 DNS 服务器，从而提升了系统的访问效率和安全性。我们也可以便捷的为系统绑定例如&lt;code>jf.cloud&lt;/code>这样简洁的域名而无需付费购买域名。&lt;/p>
+&lt;h3 id="22-后端的选择">
+&lt;a class="header-anchor" href="#22-%e5%90%8e%e7%ab%af%e7%9a%84%e9%80%89%e6%8b%a9">&lt;/a>
+2.2 后端的选择
+&lt;/h3>&lt;p>对于本项目来说，选择适合的后端技术框架至关重要。在多种后端框架中，我考虑了以下几个技术栈：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Node.js&lt;/strong>：作为一个基于事件驱动的非阻塞 I/O 模型，Node.js 非常适合处理高并发请求。如果我们的系统面临大量同时在线的用户访问，Node.js 可以提供较好的性能。&lt;/li>
+&lt;li>&lt;strong>PHP&lt;/strong>：PHP 是一种成熟且广泛使用的 Web 开发语言，具有快速的开发周期和易于部署的优势。对于一些中小型项目来说，PHP 是一种常见的选择。&lt;/li>
+&lt;li>&lt;strong>Java&lt;/strong>：Java 强大的后台处理能力和稳定性使其成为开发大规模应用的首选框架，特别是在企业级应用中表现突出。然而，Java 的开发周期较长，且对开发者的技能要求较高。&lt;/li>
+&lt;/ul>
+&lt;p>在综合考虑了易用性、开发效率、学习曲线等因素后，我最终选择了 &lt;strong>Flask&lt;/strong> 框架。Flask 是一个轻量级的 Python Web 框架，具有以下优点：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>开发便捷性&lt;/strong>：Flask 的代码简洁且易于理解，非常适合快速开发和部署。它的学习曲线较低，适合我在较短时间内完成开发。&lt;/li>
+&lt;li>&lt;strong>丰富的扩展库&lt;/strong>：Flask 拥有丰富的第三方扩展库，可以很容易地集成数据库、表单验证、身份验证等功能，能够满足本项目的基本需求。&lt;/li>
+&lt;li>&lt;strong>教学功能&lt;/strong>：由于课本上使用 Flask 作为教学内容，因此在教学过程中，使用 Flask 框架可以让我将系统代码与课堂内容直接结合，起到教学和项目开发双重作用。&lt;/li>
+&lt;/ul>
+&lt;p>Flask 的优点不仅体现在开发周期短、功能强大上，还在于其能够灵活地扩展和自定义，特别适合像本项目这样的小型应用。&lt;/p></description></item><item><title>Linux系统从入门到入土1-基础操作</title><link>http://EternalIllusion.github.io/post/linuxnoob01/</link><pubDate>Tue, 17 Dec 2024 09:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/post/linuxnoob01/</guid><description>&lt;blockquote>
 &lt;p>This page is under writing.&lt;/p>
 &lt;/blockquote>
 &lt;h1 id="文件处理">
@@ -512,8 +553,4 @@ FlipperCN许可协议
  &lt;/div>
  &lt;/div>
  
-&lt;/div></description></item><item><title>女装</title><link>http://EternalIllusion.github.io/hidden/nz/</link><pubDate>Sat, 05 Nov 2022 11:59:59 +0800</pubDate><guid>http://EternalIllusion.github.io/hidden/nz/</guid><description>&lt;blockquote>
-&lt;p>Copyright:⚠️未经允许，禁止转发⚠️
-&lt;img src="http://EternalIllusion.github.io/img/nz1.jpg" alt="">
-&lt;img src="http://EternalIllusion.github.io/img/nz2.jpg" alt="">&lt;/p>
-&lt;/blockquote></description></item><item><title>关于</title><link>http://EternalIllusion.github.io/about/</link><pubDate>Thu, 09 Jun 2022 20:12:52 +0800</pubDate><guid>http://EternalIllusion.github.io/about/</guid><description/></item></channel></rss>
+&lt;/div></description></item><item><title>关于</title><link>http://EternalIllusion.github.io/about/</link><pubDate>Thu, 09 Jun 2022 20:12:52 +0800</pubDate><guid>http://EternalIllusion.github.io/about/</guid><description/></item></channel></rss>
