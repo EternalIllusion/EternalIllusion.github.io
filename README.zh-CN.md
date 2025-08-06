@@ -1,9 +1,3 @@
-# EterIll.xyz
-
-My blog site src repo.
-
-[Visit EterIll.xyz](https://eterill.xyz/)
-
 # Samudrartha
 
 基于 [Fuwari](https://fuwari.vercel.app) & [Astro](https://astro.build) 开发的静态博客模板。
@@ -17,9 +11,9 @@ My blog site src repo.
 - [x] 亮色 / 暗色模式
 - [x] 自定义主题色和横幅图片
 - [x] 响应式设计
-- [x] 评论
+- [ ] 评论
 - [x] 搜索
-- [x] 文内目录
+- [ ] 文内目录
 
 ## 🚀 使用方法
 
