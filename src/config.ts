@@ -70,11 +70,13 @@ export const navBarConfig: NavBarConfig = {
 			url: "/donate/", // Internal links should not include the base path, as it is automatically added
 			external: false, // Show an external link icon and will open in a new tab
 		},
+		/*
 		{
 			name: "统计",
 			url: "https://cloud.umami.is/share/SLdrKvugiaXdHR3Q", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
+		*/
 	],
 };
 
@@ -110,7 +112,7 @@ export const imageFallbackConfig: ImageFallbackConfig = {
 
 export const umamiConfig: UmamiConfig = {
 	enable: true,
-	baseUrl: "https://umami.is",
+	baseUrl: "https://us.umami.is",
 	shareId: "SLdrKvugiaXdHR3Q",
 	timezone: "Asia/Shanghai",
 };
