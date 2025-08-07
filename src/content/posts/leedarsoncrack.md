@@ -1,6 +1,6 @@
 ---
 title: 立达信教育物联面板破解改装教程
-image: https://tse4-mm.cn.bing.net/th/id/OIP-C.lh4fi-Kapb51zrbET9aXQQAAAA?pid=ImgDetMain
+image: https://eterill.xyz/assets/posts/leedarsoncrack-1.webp
 category: 教程
 description: 立达信教育物联面板破解改装教程
 draft: false
@@ -14,6 +14,7 @@ tags:
 ## 注意！损害公共财产的行为不可取！后果请自负！
 
 很多学校使用的灯控面板来自立达信教育物联，经过本人研究发现86盒面板居然是带zigbee的安卓面板，MCU是Rockchip的PX30，性能方面勉勉强强，480p的H264可以达到30fps，考虑到这款灯控面板的显示屏也就是480*480px，拿来摸鱼还是够用的。
+![显示屏是480*480px](/assets/posts/leedarsoncrack-2.webp)
 
 ### 初尝试（ADB）
 
