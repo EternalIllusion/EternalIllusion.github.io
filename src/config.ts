@@ -24,7 +24,7 @@ export const siteConfig: SiteConfig = {
 		enable: true,
 		src: "/dhil.webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 
-		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
+		position: "top", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: true, // Display the credit text of the banner image
 			text: "X @hisehisekin", // Credit text to be displayed
@@ -34,7 +34,7 @@ export const siteConfig: SiteConfig = {
 	},
 	background: {
 		enable: false, // Enable background image
-		src: "https://eo-pic.2x.nz/h", // Background image URL (supports HTTPS)
+		src: "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7", // Background image URL (supports HTTPS)
 		position: "center", // Background position: 'top', 'center', 'bottom'
 		size: "cover", // Background size: 'cover', 'contain', 'auto'
 		repeat: "no-repeat", // Background repeat: 'no-repeat', 'repeat', 'repeat-x', 'repeat-y'

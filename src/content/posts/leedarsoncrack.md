@@ -28,7 +28,7 @@ tags:
 
 usb连接电脑，自动开机，电脑adb识别成功。
 
-安装了个第三方桌面(我用的微软桌面)和MT管理器，就可以冻结`com.leedarson.impmini`替换系统桌面了
+安装了个第三方桌面(我用的微软桌面)和MT管理器，就可以冻结`com.leedarson.impmini`替换系统桌面了。同时别忘记打开系统设置-显示-隐藏xx栏取消勾选，这样就可以打开系统自带的导航栏方便操作了。你也可以使用gesture之类的手势导航软件。
 
 ### 10分钟自动重启？
 
@@ -50,8 +50,17 @@ su -c "sh /data/IotOs/x64/shutdown.sh" - root
 
 ### 破解成功！接下来你就可以拿灯控刷b站啦！
 
-（未完待续：修改独立供电，用充电宝来供电）
+注意！由于性能原因，正常客户端是很难正常打开的。
+
+这时候我们下载车机版Bilibili（个人推荐前往 **官网APP下载页面** 或者 果核剥壳 下载）最新版，就可以相对流畅一些。有时我们发现看视频会出现见写信掉帧的情况，我们需要前往设置开启H264硬解，来提升流畅度。
+
+![开启H264硬解](/assets/posts/leedarsoncrack-b1.webp)
+
+
+#### （未完待续：修改独立供电，用充电宝来供电）
 
 ![外接引脚定义](/assets/posts/leedarsoncrack-3.webp)
 
 ![改装供电示例](/assets/posts/leedarsoncrack-4.webp)
+
+![改装供电示例](/assets/posts/leedarsoncrack-5.webp)

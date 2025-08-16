@@ -97,6 +97,9 @@ const jsonLd = {
                 ></PostMetadata>
                 {!entry.data.image && <div class="border-[var(--line-divider)] border-dashed border-b-[1px] mb-5"></div>}
             </div>
+            <div id="info-page-not-wide-enough" class="custom-md prose onload-animation w-full !max-w-none" style="animation-delay: calc(var(--content-delay) + 0ms);color:var(--admonitions-color-caution) !important;">
+                <blockquote class="admonition bdm-caution"><span class="bdm-title" style="">WARNING</span><p>您的浏览器窗口宽度不足，您可以缩小页面或切换至横屏来获取更好的浏览体验。</p></blockquote>
+            </div>
 
             <!-- always show cover as long as it has one -->
 
