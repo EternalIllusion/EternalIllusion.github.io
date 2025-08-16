@@ -51,3 +51,7 @@ su -c "sh /data/IotOs/x64/shutdown.sh" - root
 ### 破解成功！接下来你就可以拿灯控刷b站啦！
 
 （未完待续：修改独立供电，用充电宝来供电）
+
+![外接引脚定义](/assets/posts/leedarsoncrack-3.webp)
+
+![改装供电示例](/assets/posts/leedarsoncrack-4.webp)
