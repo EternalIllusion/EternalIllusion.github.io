@@ -10,7 +10,7 @@ tags:
 - SMP
 - Multiplayer
 category: '指南'
-draft: true 
+draft: false 
 ---
 
 # HPMS服务器是什么？
@@ -70,4 +70,84 @@ HPMS是一个正版Minecraft服务器。欲加入HPMS服务器，您需要购入
     > 
     > 第四行将保存物品的ID/名称。在标志上写上 “?”, 商店将自动识别箱子中的物品, 或者你可以稍后使用物品单击牌子来设置物品ID。
 
-## =======Work In Progress======
+## 实用指令
+传送至位置: `/warp <地点>`
+> Warp传送列表:
+>  - `sol`: 自由村民雕像
+>  - `uw`: 部落 - 共联世界 (United World)
+>  - `naida`: 部落 - 牧野源 (Naida)
+>  - `skytier`: Skytier
+>  - `spawn`: 出生点 (与 `/spawn` 作用相同)
+
+查看所有可用的传送位置: `/warp`
+
+设置家: `/sethome <家的名字 (自定义)>`
+
+删除家: `/delhome <家的名字>`
+
+回家: `/home <家的名字>`
+
+请求传送至玩家: `/tpa <玩家>`
+
+取消tpa请求: `/tpacancel`
+
+接受tpa请求: `/tpaccept [玩家]`
+
+请求特定玩家传送至你的位置: `/tpahere <玩家>`
+
+开启/关闭自动接受来自其他玩家的 tpa: `/tpauto`
+
+回到出生点: `/spawn`
+
+传送至随机位置: `/tpr`
+
+总在线时间查询: `/pt`
+
+查询服务器规则: `/rules`
+
+**查看你的警告(违反服务器规定): `/warns`**
+
+查看所有家: `/home`、`/homes`
+
+坐: `/sit`
+
+躺: `/lay`
+
+爬: `/crawl`
+
+私信给玩家: `/msg <玩家> <消息 (自定义)>`、`/tell <玩家> <消息 (自定义)>`、`/whisper <玩家> <消息 (自定义)>`、`/w <玩家> <消息 (自定义)>`
+
+余额查询: `/bal`
+
+向其他玩家转账: `/pay <玩家> <金额 (自定义)>`
+
+开启 / 关闭他人在自己商店购买 / 售卖的提示消息: `/cstoggle`
+
+> 赞助者指令(有关赞助详见[`HPMS玩家手册`](https://hpms.cc/zh/manual/))
+>
+> 打开 / 关闭飞行: `/fly`
+>
+> 回到上次死亡点: `/back`
+>
+> 旋转: `/spin`
+>
+> 将物品戴在头上: `/hat`
+
+# 服务器的地标有哪些？
+
+![United Worlds](https://vip.123pan.cn/1813814650/ymjew503t0l000d7w32xa8h0fortqk02DIYPDwYPAdQyDcxPDIUxDO==.png)
+
+共联世界United Worlds`(-38411,-68300)`
+
+![牧野原](https://vip.123pan.cn/1813814650/yk6baz03t0m000d7w33gaszu7v8ef5owDIYPDwYPAdQyDcxPDIUxDO==.png)
+
+牧野原Naida`(-38481,-67469)`
+
+![72K刷冰机](https://vip.123pan.cn/1813814650/ymjew503t0n000d7w32y76180on2ak2xDIYPDwYPAdQyDcxPDIUxDO==.gif)
+
+EterIll工业区`(-6041,-5316)`
+> 注：此地暂无warp传送点，您可以通过共联世界地狱交通前往。
+
+![GK博物馆](https://vip.123pan.cn/1813814650/ymjew503t0n000d7w32y7619y1n2eue1DIYPDwYPAdQyDcxPDIUxDO==.png)
+
+GK的博物馆`(坐标暂不公开)`
