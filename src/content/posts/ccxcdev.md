@@ -218,6 +218,9 @@ sudo chown -R www-data:www-data /var/www/
 
 ## 启动主后端
 
+> [!WARNING]
+> 虽然直接使用官方仓库没什么问题，但是还是建议自己clone一个，方便自己修改。clone之后你只需要在你的电脑上安装git就能几行命令更新服务端，非常方便！记得修改git链接哦！以及git账号相关配置在此处不赘述，请自行搜索。
+
 ```bash
 sudo mkdir -p /opt/ccxc-backend
 cd /opt/ccxc-backend
@@ -227,7 +230,10 @@ cd src
 ```
 
 > [!WARNING]
-> 这一步有坑！！！如果你是自定义域名，你需要编辑`/opt/ccxc-backend/src/ccxc-backend/Config/SystemConfig.cs`并替换如下网址`public string ProjectFrontendPrefix { get; set; } = "https://www.ccxc.ikp.yt:13880";`为你的域名，不然到后面管理面板进不去！
+> 这一步有坑！！！如果你是自定义域名，你需要编辑`/opt/ccxc-backend/src/ccxc-backend/Config/SystemConfig.cs`并替换如下网址`public string ProjectFrontendPrefix { get; set; } = "https://www.ccxc.ikp.yt:13880";`为你的域名，不然到后面管理面板无法拉起登录！
+
+> [!WARNING]
+> 这一步有坑！！！如果你是自定义域名，你需要编辑`/opt/ccxc-backend/src/ccxc-backend/Controllers/Users/SsoController.cs`并替换第41行if条件：`host.EndsWith("cipherpuzzles.com", StringComparison.OrdinalIgnoreCase)`中的网址为你的域名，不然到后面管理面板登录返回400无法登录！
 
 ```bash
 sudo dotnet publish --configuration Release --runtime linux-x64 --self-contained false --output /opt/ccxc-backend/app
@@ -398,6 +404,70 @@ Bye
 
 现在回到主站登录，发现已经是管理员了，接下来按照官方文档说明进入后台修改其他字段就行了。 **如果提示sso错误或者其他报错就退出登录之后重新登录一次！**
 
+
+## 防火墙配置
+
+防火墙是极为重要的一环，不装防火墙你的服务器不出几天就得出事
+
+大多数Ubuntu系统已预装UFW。若未安装，可通过以下命令安装：
+
+```bash
+sudo apt update
+sudo apt install ufw
+```
+
+UFW默认允许所有出站流量并拒绝所有入站流量。为实现完全的“默认拒绝”，需显式设置入站和出站策略：
+
+```bash
+#允许SSH（端口22）入站：
+sudo ufw allow 22
+#你需要注意自己ssh连接时用的哪个端口，一定要确认好！要不然你的服务器就只能想办法物理登录了！！！
+
+#允许HTTP（端口80）入站：
+sudo ufw allow 80
+#允许HTTPS（端口443）入站：
+sudo ufw allow 443
+
+#对敏感端口加强防护：
+sudo ufw deny 6379
+sudo ufw deny 3306
+sudo ufw deny 9090
+
+#默认阻止入站
+sudo ufw default deny incoming
+sudo ufw default deny outgoing
+```
+
+启用UFW防火墙：(请你确保之前配置正确！这是最后一次反悔机会！如果你不小心关了ssh端口就只能物理连接了！)
+```bash
+sudo ufw enable
+
+#确认防火墙状态
+sudo ufw status
+```
+
+正确配置的示例如下：
+
+```
+root@ppbjsxb# ufw status
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22                         ALLOW       Anywhere
+6379                       DENY        Anywhere
+3306                       DENY        Anywhere
+80                         ALLOW       Anywhere
+443                        ALLOW       Anywhere
+9090                       DENY        Anywhere
+22 (v6)                    ALLOW       Anywhere (v6)
+6379 (v6)                  DENY        Anywhere (v6)
+3306 (v6)                  DENY        Anywhere (v6)
+80 (v6)                    ALLOW       Anywhere (v6)
+443 (v6)                   ALLOW       Anywhere (v6)
+9090 (v6)                  DENY        Anywhere (v6)
+```
+
 ### 👍💯👏恭喜！你已经完成了基本部署！
 
 ## 辅助服务部署
@@ -534,7 +604,52 @@ sudo systemctl restart ccxc
 
 ## 其他细节！
 
-CCXC前端部分功能没有改干净，后面如果有空我会完善这一部分，不过先让我军训完再说（
+### 前后端更新
+
+#### 前端更新
+
+管理后台
+
+```bash
+cd /tmp/ccxc-builds/admin
+git pull
+npm install
+npm run build
+sudo cp -r dist/* /var/www/ccxc/admin/
+```
+
+网站前端
+
+```bash
+cd /tmp/ccxc-builds/website
+git pull
+npm install
+npm run build
+sudo cp -r dist/* /var/www/ccxc/website/
+```
+
+谜题前端
+
+```bash
+cd /tmp/ccxc-builds/puzzle
+git pull
+npm install
+npm run build
+sudo cp -r dist/* /var/www/ccxc/puzzle/
+```
+
+#### 后端更新
+
+```bash
+cd /opt/ccxc-backend/src
+sudo git pull
+sudo dotnet publish --configuration Release --runtime linux-x64 --self-contained false --output /opt/ccxc-backend/app
+sudo systemctl restart ccxc
+```
+
+> 如你所见，git pull之后会导致配置文件被覆盖，现在你知道为啥我推荐自己clone仓库了吧（
+
+CCXC前端部分功能没有改干净，后面如果有空我会完善这一部分，不过我可能没那么有空，你也可以加我qq来问我（
 
 ## 鸣谢
 
@@ -542,9 +657,7 @@ CCXC前端部分功能没有改干净，后面如果有空我会完善这一部�
 
 ## 我还是不会，怎么办！！！
 
-1.直接在下面Github登录然后评论
-
-2.点击网站主页置顶文章加我QQ，备注：CCXC *（不备注不通过）*
+点击网站主页置顶文章加我QQ，备注：CCXC *（不备注不通过）*
 
 > [!TIP]
 > 我们正在筹建一个预计于每年寒假举办的CCBC的fanmade赛事，如果您有兴趣加入出题组或者内测组，亦或者您有美工或者设计方面的才能，欢迎您加入！群号：[1061351084(点击加群)](https://qm.qq.com/q/IW4u3LjbeS)
