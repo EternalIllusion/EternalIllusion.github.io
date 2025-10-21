@@ -642,6 +642,7 @@ sudo cp -r dist/* /var/www/ccxc/puzzle/
 
 ```bash
 cd /opt/ccxc-backend/src
+sudo systemctl stop ccxc
 sudo git pull
 sudo dotnet publish --configuration Release --runtime linux-x64 --self-contained false --output /opt/ccxc-backend/app
 sudo systemctl restart ccxc
