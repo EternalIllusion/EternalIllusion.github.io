@@ -13,6 +13,11 @@ tags:
 
 CCXC是个非常好的PuzzleHunt后台引擎，这篇文章会教学如何从0开始部署一个私有化的CCXC引擎，当然您也可以查看：[官方部署文档](https://engine.ccbcarchive.com/guide/deployment.html)
 
+> [!WARNING]
+> 前排提醒，ccxc的设计非常精妙，复杂度相当高，如果你要办hunt但是精力不足建议使用[P&KU Website](https://github.com/PKUPC/pnku-website).同时我有空的话也可以找我**免费**帮忙（仅限非期末周，期末周太忙了心有余而力不足TAT）
+>
+> 注：如果时间紧迫，部署容易度&速度 公众号>P&KU Website>CCXC；（根据本人体验主观排名）
+
 > [!TIP]
 > 我们正在筹建一个预计于每年寒假举办的CCBC的fanmade赛事，如果您有兴趣加入出题组或者内测组，亦或者您有美工或者设计方面的才能，欢迎您加入！群号：[1061351084(点击加群)](https://qm.qq.com/q/IW4u3LjbeS)
 
@@ -270,7 +275,7 @@ AliyunDmAccessSecret = "！！这里填阿里云AccessSecret！！"
 Description=Ccxc Backend
 
 [Service]
-ExecStart=/opt/ccxc-backend/ccxc-backend
+ExecStart=/opt/ccxc-backend/app/ccxc-backend
 Restart=always
 Environment=PATH=/usr/bin:/usr/local/bin:/usr/local/node/bin
 WorkingDirectory=/opt/ccxc-backend/
@@ -314,7 +319,13 @@ sudo systemctl status ccxc
 Unhanded exception . Sqlsugar . Sq 1 sugarException :中文提示:连接数据库过程中发生错误,检查服务器是否正常：ccxc_user '@' localhost ' to database ' mysql' DbType =" MySql"; ConfigId =""; Access denied for user 'ccxc_user'@'localhost' English Message : Connection open error Access denied for user to database ' my at sqlsugar . check . Exception ( Boo 1 ean isException , String message , String [] args ) 
 ```
 
-这时候你要重新编辑`/opt/ccxc-backend/app/Config/ccxc.config.toml`，把数据库连接字符串换成root用户和root密码，如果还不行请自行咨询chatgpt ~~(我当时就是通义千问帮忙排查的问题)~~
+这时候你要重新编辑`/opt/ccxc-backend/app/Config/ccxc.config.toml`，把数据库连接字符串换成root用户和root密码。
+
+如果你用root用户在控制台输入`mysql -u ccxc_user -p`然后输入密码进不去数据库操作界面大概率是你密码复制错了。
+
+如果你用root用户在控制台输入`mysql -u root -p`然后输入数据库root密码进不去数据库操作界面大概率是数据库安装过程配置错了。
+
+如果你用root用户在控制台输入`mysql -u root`进不去数据库操作界面大概率是要重装数据库了。不过目前来说还是直接重装系统最方便（）
 
 排查顺序： ccxc_user登录 > root登录 > mariadb配置 > 重装数据库
 
@@ -335,10 +346,13 @@ Unhanded exception . Sqlsugar . Sq 1 sugarException :中文提示:连接数据�
 > [!WARNING]
 > 这一步全是坑！！！！！
 
-首先，你需要注册主站，注册完需要你验证邮件，但是你没有阿里云AccessKey或者显示邮件发送错误，这时候你就需要使用数据库绕激活
+首先，你需要注册主站，注册完需要你验证邮件，但是你没有阿里云AccessKey或者显示邮件发送错误，这时候你就需要数据库激活。
 
 > [!WARNING]
-> 这一步有坑！！！阿里云AccessKey填写正确之后发不出邮件，后端显示`Aliyun.Acs.Core.Exceptions.ClientException: InvalidMailAddress.NotFound : The specified mailAddress does not exist.`请注意需要使用新加披站点的发件邮箱! 在DM控制台左上角下拉框改成新加坡重新配置发件域名和发件地址！
+> 这一步有坑！！！阿里云AccessKey填写正确之后发不出邮件，后端显示`Aliyun.Acs.Core.Exceptions.ClientException: InvalidMailAddress.NotFound : The specified mailAddress does not exist.`请注意需要使用**新加披站点**的发件邮箱! 在DM控制台左上角下拉框改成新加坡重新配置发件域名和发件地址！
+
+<details>
+<summary>对于2025.10.1 bbfd901前的版本</summary>
 
 ### 绕邮件激活/初始化管理
 
@@ -404,6 +418,15 @@ Bye
 
 现在回到主站登录，发现已经是管理员了，接下来按照官方文档说明进入后台修改其他字段就行了。 **如果提示sso错误或者其他报错就退出登录之后重新登录一次！**
 
+</details>
+
+### 初始化管理
+
+这一部分适用于**2025.10.1 bbfd901**之后版本的ccxc-backend。如果你的后端是很早之前clone的那建议用上面折叠快里的方法或者更新仓库。
+
+无论怎么样绑定邮件是无可避免的，如果你要办hunt建议还是搞一个AccessKey吧。
+
+如果上面的步骤你都做对了，那么你可以先注册个账号，然后输入`/opt/ccxc-backend/app/ccxc-backend initadmin`,接着输入对应的uid即可 **（一般是1）** 。不过即使这样你也逃不过修改后端的命运TAT
 
 ## 防火墙配置
 
@@ -658,7 +681,7 @@ CCXC前端部分功能没有改干净，后面如果有空我会完善这一部�
 
 ## 我还是不会，怎么办！！！
 
-点击网站主页置顶文章加我QQ，备注：CCXC *（不备注不通过）*
+加我QQ1668270511，备注：CCXC *（不备注不通过）*
 
 > [!TIP]
 > 我们正在筹建一个预计于每年寒假举办的CCBC的fanmade赛事，如果您有兴趣加入出题组或者内测组，亦或者您有美工或者设计方面的才能，欢迎您加入！群号：[1061351084(点击加群)](https://qm.qq.com/q/IW4u3LjbeS)
