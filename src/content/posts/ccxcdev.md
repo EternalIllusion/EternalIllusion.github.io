@@ -14,9 +14,15 @@ tags:
 CCXC是个非常好的PuzzleHunt后台引擎，这篇文章会教学如何从0开始部署一个私有化的CCXC引擎，当然您也可以查看：[官方部署文档](https://engine.ccbcarchive.com/guide/deployment.html)
 
 > [!WARNING]
-> 前排提醒，ccxc的设计非常精妙，复杂度相当高，如果你要办hunt但是精力不足建议使用[P&KU Website](https://github.com/PKUPC/pnku-website).同时我有空的话也可以找我**免费**帮忙（仅限非期末周，期末周太忙了心有余而力不足TAT）
+> 2025.10.20 37eabcc更新了一个有关用户多地登录的bug，如未更新建议更新！
+
+
+> [!WARNING]
+> 前排提醒，ccxc的设计非常精妙，对于普通hunt需要定制很多的内容，如果你要办hunt但是精力不足建议使用[P&KU Website](https://github.com/PKUPC/pnku-website).同时我有空的话也可以找我**免费**帮忙（仅限非期末周，期末周太忙了心有余而力不足TAT）
 >
-> 注：如果时间紧迫，部署容易度&速度 公众号>P&KU Website>CCXC；（根据本人体验主观排名）
+> 注：如果时间紧迫，（根据本人体验主观排名）部署容易度&速度 公众号>P&KU Website>CCXC；
+> 
+> 相对的，体验效果上CCXC会更好。
 
 > [!TIP]
 > 我们正在筹建一个预计于每年寒假举办的CCBC的fanmade赛事，如果您有兴趣加入出题组或者内测组，亦或者您有美工或者设计方面的才能，欢迎您加入！群号：[1061351084(点击加群)](https://qm.qq.com/q/IW4u3LjbeS)
@@ -260,10 +266,14 @@ ImagePrefix = "https://static.yourdomain.com/images/"
 PassHashKey1 = "！！这里填一个20字符长度的脸滚键盘字符串！！"
 PassHashKey2 = "！！这里填一个20字符长度的脸滚键盘字符串！！"
 AESMasterKey = "！！这里填一个32字符长度的脸滚键盘字符串！！"
+# 下面那个邮件验证的选项关闭后注册的时候不会发送邮件，但是关掉之后就没法重置密码了
+EnableEmailVerify = "True"
 AliyunDmAccessKey = "！！这里填阿里云AccessKey！！"
 AliyunDmAccessSecret = "！！这里填阿里云AccessSecret！！"
 ```
 [脸滚键盘字符生成器](https://www.lddgo.net/string/randompassword)排除字符填`"\`,设置好长度直接复制进来替换就行
+
+有关邮件验证验证配置项的详细信息，请往下翻到系统初始化环节。
 
 阿里云邮件推送要求你拥有一个域名，所以如果你没有的话可以不填，后面会教怎么绕邮件激活。
 
@@ -424,9 +434,14 @@ Bye
 
 这一部分适用于**2025.10.1 bbfd901**之后版本的ccxc-backend。如果你的后端是很早之前clone的那建议用上面折叠快里的方法或者更新仓库。
 
+如果上面的步骤你都做对了，那么你可以先注册个账号，然后输入`/opt/ccxc-backend/app/ccxc-backend initadmin`,接着输入对应的uid即可 **（一般是1）** 。不过即使这样你也逃不过修改后端的命运TAT
+
+#### 关于邮件激活的配置项
+
+注意：如果关闭了邮件验证，重置密码会被禁用，就会无法重置密码。所以在你第一次注册的时候可以关闭，但是后续建议还是开回来。
+
 无论怎么样绑定邮件是无可避免的，如果你要办hunt建议还是搞一个AccessKey吧。
 
-如果上面的步骤你都做对了，那么你可以先注册个账号，然后输入`/opt/ccxc-backend/app/ccxc-backend initadmin`,接着输入对应的uid即可 **（一般是1）** 。不过即使这样你也逃不过修改后端的命运TAT
 
 ## 防火墙配置
 

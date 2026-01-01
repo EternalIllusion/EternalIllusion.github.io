@@ -1,14 +1,14 @@
 # EterIll.xyz
 
-My blog site src repo.
+我的博客站源码仓库。My blog site src repo.
 
 [Visit EterIll.xyz](https://eterill.xyz/)
 
+[Visit 91vip.pics(国内更快))](https://91vip.pics/)
+
 # Samudrartha
 
-基于 [Fuwari](https://fuwari.vercel.app) & [Astro](https://astro.build) 开发的静态博客模板。
-
-![Preview Image](https://raw.githubusercontent.com/saicaca/resource/main/fuwari/home.png)
+基于 [Fuwari](https://fuwari.vercel.app) & [Astro](https://astro.build) 开发的静态博客主题。
 
 ## ✨ 功能特性
 
