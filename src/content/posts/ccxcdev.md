@@ -1,5 +1,6 @@
 ---
 title: 'ccxc部署小白教程（踩坑记录）'
+updated: 2026-02-20
 published: 2025-09-17
 description: '本人在CCXC-Engine部署过程中踩的坑以及部署ccxc引擎的小白向教程'
 image: 'https://engine.ccbcarchive.com/ccxc-engine-logo.png'
@@ -25,7 +26,7 @@ CCXC是个非常好的PuzzleHunt后台引擎，这篇文章会教学如何从0�
 > 相对的，体验效果上CCXC会更好。
 
 > [!TIP]
-> 我们正在筹建一个预计于每年寒假举办的CCBC的fanmade赛事，如果您有兴趣加入出题组或者内测组，亦或者您有美工或者设计方面的才能，欢迎您加入！群号：[1061351084(点击加群)](https://qm.qq.com/q/IW4u3LjbeS)
+> 我们正在筹建一个预计于(已跳票很久)的CCBC的fanmade赛事，如果您有兴趣加入出题组或者内测组，亦或者您有美工或者设计方面的才能，欢迎您加入！群号：[1061359082(点击加群)](https://qm.qq.com/q/wBLBM1kY9M)
 
 ## 硬件准备
 
@@ -253,7 +254,7 @@ sudo chown -R www-data:www-data /opt/ccxc-backend
 sudo chmod +x /opt/ccxc-backend/app/ccxc-backend
 ```
 
-编辑`/opt/ccxc-backend/app/Config/ccxc.config.toml`:
+编辑`/opt/ccxc-backend/Config/ccxc.config.toml`（如果不存在的话就是`/opt/ccxc-backend/app/Config/ccxc.config.toml`）:
 
 ```toml
 [Config/CcxcConfig]
@@ -329,7 +330,7 @@ sudo systemctl status ccxc
 Unhanded exception . Sqlsugar . Sq 1 sugarException :中文提示:连接数据库过程中发生错误,检查服务器是否正常：ccxc_user '@' localhost ' to database ' mysql' DbType =" MySql"; ConfigId =""; Access denied for user 'ccxc_user'@'localhost' English Message : Connection open error Access denied for user to database ' my at sqlsugar . check . Exception ( Boo 1 ean isException , String message , String [] args ) 
 ```
 
-这时候你要重新编辑`/opt/ccxc-backend/app/Config/ccxc.config.toml`，把数据库连接字符串换成root用户和root密码。
+这时候你要重新编辑`/opt/ccxc-backend/Config/ccxc.config.toml`，把数据库连接字符串换成root用户和root密码。
 
 如果你用root用户在控制台输入`mysql -u ccxc_user -p`然后输入密码进不去数据库操作界面大概率是你密码复制错了。
 
@@ -699,4 +700,4 @@ CCXC前端部分功能没有改干净，后面如果有空我会完善这一部�
 加我QQ1668270511，备注：CCXC *（不备注不通过）*
 
 > [!TIP]
-> 我们正在筹建一个预计于每年寒假举办的CCBC的fanmade赛事，如果您有兴趣加入出题组或者内测组，亦或者您有美工或者设计方面的才能，欢迎您加入！群号：[1061351084(点击加群)](https://qm.qq.com/q/IW4u3LjbeS)
+> 我们正在筹建一个预计于(已跳票很久)的CCBC的fanmade赛事，如果您有兴趣加入出题组或者内测组，亦或者您有美工或者设计方面的才能，欢迎您加入！群号：[1061359082(点击加群)](https://qm.qq.com/q/wBLBM1kY9M)
