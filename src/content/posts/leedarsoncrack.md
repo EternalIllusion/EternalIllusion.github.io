@@ -1,6 +1,6 @@
 ---
 title: 立达信教育物联面板破解改装教程
-image: https://eterill.xyz/assets/posts/leedarsoncrack-1.webp
+image: /assets/posts/leedarsoncrack-1_01BA35D5DC4D77A18F80C7A7F8C60EC2.webp
 category: 教程
 description: 立达信教育物联面板破解改装教程
 draft: false
@@ -15,7 +15,7 @@ tags:
 > 注意！损害公共财产的行为不可取！后果请自负！
 
 很多学校使用的灯控面板来自立达信教育物联，经过本人研究发现86盒面板居然是带zigbee的安卓面板，MCU是Rockchip的PX30，性能方面勉勉强强，480p的H264可以达到30fps，考虑到这款灯控面板的显示屏也就是480*480px，拿来摸鱼还是够用的。
-![显示屏是480*480px](/assets/posts/leedarsoncrack-2.webp)
+![显示屏是480*480px](/assets/posts/leedarsoncrack-2_8A52B6BE88F2FAD6B101EB5625611E32.webp)
 
 ## 初尝试（ADB）
 
@@ -55,24 +55,24 @@ su -c "sh /data/IotOs/x64/shutdown.sh" - root
 
 这时候我们下载车机版Bilibili（个人推荐前往 **官网APP下载页面** 或者 果核剥壳 下载）最新版，就可以相对流畅一些。有时我们发现看视频会出现见写信掉帧的情况，我们需要前往设置开启H264硬解，来提升流畅度。
 
-![开启H264硬解](/assets/posts/leedarsoncrack-b1.webp)
+![开启H264硬解](/assets/posts/leedarsoncrack-b1_1F0BBADF819FC4BAE16A5EFDD5B634D6.webp)
 
 
 ## 修改独立供电，用充电宝来供电
 
 由于这玩意装在墙上，不拿下来的话用着太麻烦了，所以我们可以制作一个离线供电线。我们可以买一个2.0mm间距排针和一根充电线，然后按照下图接线。
 
-![外接引脚定义](/assets/posts/leedarsoncrack-3.webp)
+![外接引脚定义](/assets/posts/leedarsoncrack-3_43A1487506C7F5992B8C2FC9384B6FD7.webp)
 
 你只需要接两个接口就行了，把数据线剪开，剥出红色和黑色的线，红的接到VCC，黑的接到GND就行了，实际上不用排针其实也行（
 
 又或者，你是焊接大蛇，并且有一定电路基础，你就可以买一个CD42模块和3.7v锂电池，如此连接。
 
-![改装供电示例](/assets/posts/leedarsoncrack-5.webp)
+![改装供电示例](/assets/posts/leedarsoncrack-5_05B9BA5F3D7BBCA962548E6C0D550024.webp)
 
 或者，你也可以把电路全部内置在外壳里。注意板子上是高温锡，焊接的时候建议焊笔开350-380°C焊接。焊完之后模块底下一定要垫塑料膜用来绝缘。如果焊完不开机而且通电之后排母附近发烫的话把排母右边那个5V字样旁边那个二极管拆掉就行了，这个稳压管很容易烧。
 
-![改装供电示例](/assets/posts/leedarsoncrack-4.webp)
+![改装供电示例](/assets/posts/leedarsoncrack-4_3B91771A2D5470838C9CDB128D0EC5C3.webp)
  
 > [!WARNING]
 > 模块一定要做好绝缘！！！

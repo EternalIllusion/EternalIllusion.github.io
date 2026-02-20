@@ -22,7 +22,7 @@ export const siteConfig: SiteConfig = {
 	},
 	banner: {
 		enable: true,
-		src: "/dhil.webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		src: "/bg_EFD7EC4B1DB3E8E20C259C03DECAF4B2.webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 
 		position: "top", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {

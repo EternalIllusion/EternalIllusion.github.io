@@ -3,7 +3,7 @@ title: 'ccxc部署小白教程（踩坑记录）'
 updated: 2026-02-20
 published: 2025-09-17
 description: '本人在CCXC-Engine部署过程中踩的坑以及部署ccxc引擎的小白向教程'
-image: 'https://engine.ccbcarchive.com/ccxc-engine-logo.png'
+image: /assets/posts/ccxc_banner_43A5FE1EFD6504FBDCE67A1079D35A18.png
 category: 教程
 draft: false
 tags:
@@ -15,7 +15,8 @@ tags:
 CCXC是个非常好的PuzzleHunt后台引擎，这篇文章会教学如何从0开始部署一个私有化的CCXC引擎，当然您也可以查看：[官方部署文档](https://engine.ccbcarchive.com/guide/deployment.html)
 
 > [!WARNING]
-> 2025.10.20 37eabcc更新了一个有关用户多地登录的bug，如未更新建议更新！
+> 2025.10.20 37eabcc更新了一个有关用户多地登录的bug，如未更新建议更新！    
+> 2026.01.29 fdf46bc[递交了一个有关验证码重放的修复，建议更新！（PR链接）](https://github.com/cipherpuzzles/ccxc-backend/pull/1)
 
 
 > [!WARNING]

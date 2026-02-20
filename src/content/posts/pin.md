@@ -1,6 +1,6 @@
 ---
 title: "商务联系方式"
-image: https://avatars.githubusercontent.com/u/190497522?v=4
+image: /assets/posts/pin_26BE7D78EC7E5C25C76166A44946B26B.png
 published: 2025-05-24
 pinned: true
 category: '置顶'
