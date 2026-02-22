@@ -126,8 +126,8 @@ const className = Astro.props.class;
                 }
                 
                 const statsData = await statsResponse.json();
-                const pageViews = statsData.pageviews?.value || 0;
-                const visits = statsData.visits?.value || 0;
+                const pageViews = statsData?.pageviews || 0;
+                const visits = statsData?.visits || 0;
                 
                 const displayElement = document.getElementById('page-views-display');
                 if (displayElement) {
