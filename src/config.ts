@@ -113,6 +113,6 @@ export const imageFallbackConfig: ImageFallbackConfig = {
 export const umamiConfig: UmamiConfig = {
 	enable: true,
 	baseUrl: "https://um.et3.my",
-	shareId: "YzFTLQjQIgfhR4Gz",
+	shareId: "8CZ1O8H7NJRYs2Uk",
 	timezone: "Asia/Shanghai",
 };

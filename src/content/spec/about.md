@@ -17,14 +17,7 @@ MBTI: **INTP-T**
 爱好：**DIY 写代码 我的世界** 像素工厂 崩坏·星穹铁道    
 *Favorites: *`DIY` `Coding` `Minecraft` `Mindustry` `Honkai Impact:Star Rail`
 
-# 我推的角色
+## 我推的角色
 - ❤️丹恒·饮月 | Imbibitor Lunae
-- 枫原万叶 | Kaedehara Kazuha   
->本人饮月激推，但不是单推
 
-# 联系我 | Contact Me
-- email: [eterill@hotmail.com](mailto:eterill@hotmail.com)
-- github: [EternalIllusion](https://github.com/EternalIllusion)
-- twitter: [EternralIllusion](https://x.com/EternralIllusion)
-- bilibili: [BlockCraft](https://space.bilibili.com/493559409)
-- Minecraft: [EterIll(JAVA)](https://mcprofile.io/) | [EterIllusion(Bedrock)](https://mcprofile.io/)
+>本人饮月激推，但不是单推

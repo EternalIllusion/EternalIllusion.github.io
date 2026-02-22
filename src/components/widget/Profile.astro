@@ -76,12 +76,13 @@ const config = profileConfig;
             }
             
             const statsData = await statsResponse.json();
-            const pageviews = statsData.pageviews?.value || 0;
-            const visitors = statsData.visits?.value || 0;
+            console.debug(statsData);
+            const pageviews = statsData?.pageviews || 0;
+            const visitors = statsData?.totaltime || 0;
             
             const statsElement = document.getElementById('site-stats');
             if (statsElement) {
-                statsElement.textContent = `浏览量 ${pageviews} · 访问数 ${visitors}`;
+                statsElement.textContent = `访问数 ${pageviews} · 浏览量 ${visitors}`;
             }
         } catch (error) {
             console.error('获取全站统计失败:', error);

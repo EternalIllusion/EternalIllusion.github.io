@@ -1,11 +1,12 @@
 ---
 title: FlipperCN 项目发布页
-image: https://flipperzero.one/img/tild6566-3434-4266-b037-646663393733__fpr_web_1.jpg
+image: /assets/posts/flippercn_23E466BE23622D08E03D0091E8D6B926.png
 category: 作品
-description: FlipperCN 项目发布页
+description: FlipperCN 项目发布页；包含项目相关说明、免责声明与使用条款
 draft: false
 published: 2024-12-19
 tags:
+- 开源
 - FlipperZero
 ---
 
@@ -14,6 +15,8 @@ tags:
 
 [https://flippercn.com/](https://flippercn.com/)
 欢迎您访问FlipperCN！ *（网站来自宅人改造家）*
+
+::github{repo="EternalIllusion/FlipperCN"}
 
 [发布页传送门(GitHub Release)](https://github.com/EternalIllusion/FlipperCN/releases/tag/1.0)
 

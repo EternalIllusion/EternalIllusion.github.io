@@ -1,17 +1,19 @@
 ---
-title: Alist美化、日夜主题一键切换
-image: https://oplist.org/logo.svg
+title: Openlist美化、日夜主题一键切换
+image: /assets/posts/alisttheme_EE4619A1C6D2DD416C7E590988669CE9.png
 category: 教程
-description: 给你的Alist添加更好看的主题！
+description: 给你的Openlist/Alist添加更好看的主题！包含一个快捷切换日夜主题的按钮。
 draft: false
 published: 2024-12-13
 tags:
 - Alist
 - Openlist
 ---
-说明：本文适用于**Alist>=3.31**。
+说明：本文适用于**Alist/Openlist>=3.31**。
 
-Info: This article is for **Alist>=3.31** .
+Info: This article is for **Alist/Openlist>=3.31** .
+
+::github{repo="EternalIllusion/AlistDayNightTheme"}
 
 # 日夜主题美化
 

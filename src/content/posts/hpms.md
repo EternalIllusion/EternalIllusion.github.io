@@ -1,14 +1,11 @@
 ---
 title: HPMS服务器入坑指南
 published: 2025-08-15
-description: 'hpms.cc服务器入坑指南'
-image: https://vip.123pan.cn/1813814650/yk6baz03t0m000d7w33gaqx0fx6xb317DIYPDwYPAdQyDcxPDIUxDO==.gif
+description: 'HPMS社群是什么？HPMS服务器入坑\生存、探索与交友的新手向指南'
+image: /assets/posts/hpms_AE510CF0013E87CA65701D380EE095B9.png
 tags: 
-- HPMS
 - Minecraft
-- 我的世界
 - SMP
-- Multiplayer
 category: '指南'
 draft: false 
 ---
@@ -16,6 +13,8 @@ draft: false
 # HPMS服务器是什么？
 
 > HPMS，一个多元、具有探索精神且追求知识共享的 Minecraft 生存社区。玩家们结成部落，从远古洞穴到现代文明，遍布世界。
+
+![HPMS!!!](https://vip.123pan.cn/1813814650/yk6baz03t0m000d7w33gaqx0fx6xb317DIYPDwYPAdQyDcxPDIUxDO==.gif)
 
 HPMS是一个目前处于`1.20.6`的Minecraft SMP(多人生存)服务器,腐竹是`MildBunny`.
 
