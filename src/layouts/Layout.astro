@@ -115,7 +115,7 @@ const bannerOffset =
 		<meta name="generator" content={Astro.generator} />
 		
 		{/* <!-- Content Security Policy -->
-		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://giscus.app https://cloud.umami.is; object-src 'none'; base-uri 'self'; form-action 'self';"> */}
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://giscus.app https://um.et3.my; object-src 'none'; base-uri 'self'; form-action 'self';"> */}
 		{favicons.map(favicon => (
 			<link rel="icon"
 				  href={favicon.src.startsWith('/') ? url(favicon.src) : favicon.src}
@@ -241,7 +241,7 @@ const bannerOffset =
 		<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
 		<link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin>
 		<link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin> -->
-		<link rel="preconnect" href="https://cloud.umami.is" crossorigin>
+		<link rel="preconnect" href="https://um.et3.my" crossorigin>
 		<!--<link rel="preconnect" href="https://ep1.adtrafficquality.google" crossorigin>
 		<link rel="preconnect" href="https://analytics.google.com" crossorigin>-->
 		<link rel="preconnect" href="https://api.iconify.design" crossorigin>
@@ -252,7 +252,7 @@ const bannerOffset =
 
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={`${Astro.site}rss.xml`}/>
 		<!-- Umami分析（自建） -->
-		<script defer src="https://cloud.umami.is/script.js" data-website-id="26eef73f-d7c3-41a6-98d3-574833cd3a8d"></script>
+		<script defer src="https://um.et3.my/package.js" data-website-id="3135b906-6348-4345-bbc4-061829e43159"></script>
 		<!-- 谷歌广告
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2618491437522884"
      crossorigin="anonymous"></script>
