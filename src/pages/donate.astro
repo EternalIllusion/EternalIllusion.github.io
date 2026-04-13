@@ -54,7 +54,31 @@ import { Icon } from "astro-icon/components";
                 </div>
             </div>
 
-            <!-- 加密货币 -->
+            <!-- 爱发电 -->
+            <div class="donate-card">
+                <a href="https://ifdian.net/a/eterill">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="h-10 w-10 rounded-lg bg-purple-500 flex items-center justify-center">
+                        <Icon name="simple-icons:afdian" class="text-[1.5rem] text-white">
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-black dark:text-white">爱发电</h3>
+                        <p class="text-sm text-black/60 dark:text-white/60">点击前往</p>
+                    </div>
+                </div>
+                <div class="afdian-info">
+                    <div class="mb-4">
+                        <div class="m-2">
+                            <h4 class="text-sm font-semibold text-black dark:text-white mb-2 p-2">EterIll</h4>
+                            <div class="text-sm bg-white/5 dark:bg-black/20 text-black dark:text-white p-2 rounded break-all w-full">正在创作 EterIll Blogs</div>
+                        </div>
+                        <img src="/favicon/avatar.webp">
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <!-- 加密货币
             <div class="donate-card">
                 <div class="flex items-center gap-3 mb-4">
                     <div class="h-10 w-10 rounded-lg bg-orange-500 flex items-center justify-center">
@@ -79,7 +103,7 @@ import { Icon } from "astro-icon/components";
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <!-- 其他支持方式 -->
@@ -216,6 +240,10 @@ import { Icon } from "astro-icon/components";
     @apply space-y-3;
 }
 
+.afdian-info {
+    @apply space-y-3;
+}
+
 .wallet-address, .bybit-uid {
     @apply text-center;
 }
@@ -231,7 +259,7 @@ import { Icon } from "astro-icon/components";
 </style>
 
 <script>
-function copyToClipboard(text) {
+function copyToClipboard(text:string) {
     navigator.clipboard.writeText(text).then(function() {
         // 可以添加复制成功的提示
         alert('已复制到剪贴板');
